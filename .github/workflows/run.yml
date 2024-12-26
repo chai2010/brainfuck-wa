@@ -18,7 +18,8 @@ jobs:
       - name: Set up Wa(凹语言)
         uses: wa-lang/setup-wa@master
 
-      - run: wa -h
+      - run: wa -v
+      - run: wa run -console
 
   build-and-test-windows:
     runs-on: windows-latest
@@ -29,7 +30,8 @@ jobs:
       - name: Set up Wa(凹语言)
         uses: wa-lang/setup-wa@master
 
-      - run: wa -h
+      - run: wa -v
+      - run: wa run -console
 
   build-and-test-macos:
     runs-on: macos-latest
@@ -40,4 +42,5 @@ jobs:
       - name: Set up Wa(凹语言)
         uses: wa-lang/setup-wa@master
 
-      - run: wa -h
+      - run: wa -v
+      - run: wa run -console
